@@ -1,0 +1,10 @@
+#Mac spezifisch
+.DS_Store
+
+#Ordner mit Daten die nicht ins Repositorie kommen sollen
+/*.noGit
+
+#Office, mindestens Windows sicher, spezifisch
+~$*.*
+
+
