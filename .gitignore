@@ -7,4 +7,5 @@
 #Office, mindestens Windows sicher, spezifisch
 ~$*.*
 
-
+#Visual Paradigm Temp Files nicht speichern
+*.vpp.working
