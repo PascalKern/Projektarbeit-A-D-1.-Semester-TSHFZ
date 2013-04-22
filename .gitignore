@@ -10,3 +10,4 @@
 #Visual Paradigm Temp Files nicht speichern
 *.vpp.working
 *.vpp~*
+*.vpp.bak
