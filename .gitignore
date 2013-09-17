@@ -12,4 +12,5 @@
 *.vpp.working
 *.vpp.working*
 *.vpp~*
-*.vpp.bak
+*.vpp.bak*
+*.vpp.new*
