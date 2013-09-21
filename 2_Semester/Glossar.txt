@@ -1,7 +1,0 @@
-Begriff					Fachliche Verantwortlichkeit
-
-Kunde					Identifikation eines Bedarfsträgers
-Person					Zentrale Informationen eines Leistungs- und/oder Leistungserbringer		
-Mitarbeiter				Identifikation eines Angestellten
-Adressdaten				Postalische Domizil-Daten einer Person
-Kontakt					Daten für die direkte Kommunikation mit einer Person 
