@@ -3,7 +3,7 @@
  * 
  * @name	DataAccessMock.java
  * @version	0.1
- * @author	PKern and …
+ * @author	PKern and DMarmy
  */
 package ch.packzeugs.semproject.persistence;
 
