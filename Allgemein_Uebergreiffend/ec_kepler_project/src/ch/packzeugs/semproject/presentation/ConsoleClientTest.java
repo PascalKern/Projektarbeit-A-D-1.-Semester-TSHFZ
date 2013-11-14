@@ -34,7 +34,7 @@ public class ConsoleClientTest {
 		
 		String[] data = new String[2];
 		int actCustom = 0;
-		while (custCount >= actCustom) {
+		while (custCount > actCustom) {
 			data = console.displayCustomer(actCustom);
 			
 			System.out.println(data[0] + " - " + data[1]);

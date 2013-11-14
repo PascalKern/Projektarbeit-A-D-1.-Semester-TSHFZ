@@ -63,6 +63,7 @@ public class Customer extends Person{
 //	}
 
 	
+	//TODO Catch the possible wrong ID
 	static public Customer findCustomer(int customerID){
 		String[] customerData = new String[2];
 		
