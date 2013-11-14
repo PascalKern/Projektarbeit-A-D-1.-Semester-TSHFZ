@@ -17,6 +17,10 @@ public class DataAccessMock {
 	private final int CUSTOMERMAX = 15;
 	private int clientCount;
 	
+	
+	/**
+	 * Special constructor
+	 */
 	public DataAccessMock(){
 		clientCount = 0;
 		clientList = new String[CUSTOMERMAX][];
@@ -25,7 +29,7 @@ public class DataAccessMock {
 	/**
 	 * @param client
 	 */
-	public void saveCustomer(String[] client) {
+	public void savePerson(String[] client) {
 		if(clientCount < CUSTOMERMAX){
 			clientList[clientCount] = client;
 			clientCount += 1;
@@ -34,24 +38,24 @@ public class DataAccessMock {
 		}
 	}
 	
-	public void saveCustomer(String name, String surname){
-		String[] client = new String[2];
-		client[0] = name;
-		client[1] = surname;
-		
-		saveCustomer(client);
-		
-	}
-	
-	public String[] readCustomer(int clientID){
+	public String[] readPerson(int clientID){
 		if(clientID < clientCount){
 			return clientList[clientID];
 		}
 		return null;
 	}
 	
-	public String[][] readCustomers(){
+	public String[][] readPersons(){
 		return clientList;
+	}
+
+	public void savePerson(String name, String surname){
+		String[] client = new String[2];
+		client[0] = name;
+		client[1] = surname;
+		
+		savePerson(client);
+		
 	}
 
 }

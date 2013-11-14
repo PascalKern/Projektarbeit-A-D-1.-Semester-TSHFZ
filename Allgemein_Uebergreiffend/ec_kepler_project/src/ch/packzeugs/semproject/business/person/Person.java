@@ -5,7 +5,7 @@
  * @version
  * @author
  */
-package ch.packzeugs.semproject.business;
+package ch.packzeugs.semproject.business.person;
 
 /**
  * @author PKern
@@ -16,7 +16,7 @@ public class Person {
 	private String name;
 	private String surname;
 	
-	Person(String name, String surname){
+	private Person(String name, String surname){
 		this.name = name;
 		this.surname = name;	
 	}

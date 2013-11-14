@@ -7,7 +7,7 @@
  */
 package ch.packzeugs.semproject.presentation;
 
-import ch.packzeugs.semproject.business.Client;
+import ch.packzeugs.semproject.business.Customer;
 import ch.packzeugs.semproject.persistence.DataAccessMock;
 
 /**
@@ -19,7 +19,7 @@ public class ConsoleClient {
 	
 	public void createCustomer(String name, String surname){
 		
-		Client client = new Client(name, surname);
+		Customer client = new Customer(name, surname);
 		
 		
 	}

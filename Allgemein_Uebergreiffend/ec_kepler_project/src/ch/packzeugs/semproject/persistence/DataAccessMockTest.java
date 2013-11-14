@@ -21,20 +21,20 @@ public class DataAccessMockTest {
 
 		DataAccessMock testMock = new DataAccessMock();
 		
-		testMock.saveCustomer("Pascal", "Kern");
-		testMock.saveCustomer("Thomas", "Kern");
-		testMock.saveCustomer("Rahel", "Stauffiger");
+		testMock.savePerson("Pascal", "Kern");
+		testMock.savePerson("Thomas", "Kern");
+		testMock.savePerson("Rahel", "Stauffiger");
 		
 		System.out.println("*** Get single Client Back --->");
 
-		String[] client = testMock.readCustomer(1);
+		String[] client = testMock.readPerson(1);
 		System.out.println(client[0] + " - " + client[1]);
-		client = testMock.readCustomer(2);
+		client = testMock.readPerson(2);
 		System.out.println(client[0] + " - " + client[1]);
 		
 		System.out.println("*** Read all Clients in Mock --->");
 		
-		String[][] clients = testMock.readCustomers();
+		String[][] clients = testMock.readPersons();
 		int count = 0;
 		while(clients[count] != null){
 			client = clients[count];
