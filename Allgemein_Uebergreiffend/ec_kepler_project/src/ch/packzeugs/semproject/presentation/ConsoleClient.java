@@ -7,8 +7,10 @@
  */
 package ch.packzeugs.semproject.presentation;
 
-import ch.packzeugs.semproject.business.Customer;
-import ch.packzeugs.semproject.persistence.DataAccessMock;
+import ch.packzeugs.semproject.business.person.Customer;
+
+
+
 
 /**
  * @author PKern
@@ -20,9 +22,20 @@ public class ConsoleClient {
 	public void createCustomer(String name, String surname){
 		
 		Customer client = new Customer(name, surname);
-		
+		client.saveCustomer();
 		
 	}
 	
+	//Display already here?
+	public String[] displayCustomer(int id){
+		String[] customer = new String[2];
+		
+		Customer custom = Customer.findCustomer(id);
+		
+		customer[0] = custom.getName();
+		customer[1] = custom.getSurname();
+		
+		return customer;
+	}
 	
 }
