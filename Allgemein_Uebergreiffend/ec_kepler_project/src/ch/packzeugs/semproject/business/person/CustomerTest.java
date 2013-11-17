@@ -7,21 +7,27 @@
  */
 package ch.packzeugs.semproject.business.person;
 
+// TODO: Auto-generated Javadoc
 /**
- * @author pascal
+ * The Class CustomerTest.
  *
+ * @author pascal
  */
 public class CustomerTest {
 
 	/**
-	 * @param args
+	 * The main method.
+	 *
+	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		//Erstelle Customer mit String
 		Customer custom = new Customer("Pascal","Kern");
 		custom.saveCustomer();
 		
+		//Erstelle Customer mit Array
 		String[] customArr = {"David","Marmy"};
 		Customer custom2 = new Customer(customArr);
 		custom2.saveCustomer();

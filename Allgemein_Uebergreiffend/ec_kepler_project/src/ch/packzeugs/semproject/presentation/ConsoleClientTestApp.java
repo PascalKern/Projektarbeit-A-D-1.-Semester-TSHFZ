@@ -1,25 +1,25 @@
-/**
- * TODO Class description
+/*
  * 
- * @name
- * @version
- * @author	PKern and DMarmy
  */
 package ch.packzeugs.semproject.presentation;
 
+// TODO: Auto-generated Javadoc
 /**
- * @author skern
- *
+ * The Class ConsoleClientTestApp.
  */
-public class ConsoleClientTest {
+public class ConsoleClientTestApp {
 
 	//Member
+	/** The customers. */
 	static String[][] customers = {{"Rahel","Stauffiger"},{"Mister","Complicated"}};
+	
+	/** The cust count. */
 	static int custCount = 0;
 	
-	
 	/**
-	 * @param args
+	 * The main method.
+	 *
+	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -9,20 +9,27 @@ package ch.packzeugs.semproject.business.person;
 
 import ch.packzeugs.semproject.persistence.DataAccessMock;
 
+// TODO: Auto-generated Javadoc
 /**
- * @author PKern
+ * The Class Customer.
  *
+ * @author PKern
  */
 public class Customer extends Person{
 
 	//Members
+	/** The data mock. */
 	private static DataAccessMock dataMock = new DataAccessMock();
+	
+	/** The customer_count. */
 	private static int customer_count;
 	
 	//Special constructor
 	/**
-	 * @param name
-	 * @param surname
+	 * Instantiates a new customer.
+	 *
+	 * @param name the name
+	 * @param surname the surname
 	 */
 	public Customer(String name, String surname) {
 		super(name, surname);
@@ -30,7 +37,9 @@ public class Customer extends Person{
 
 
 	/**
-	 * @param customerData
+	 * Instantiates a new customer.
+	 *
+	 * @param customerData the customer data
 	 */
 	//Only test for the readCustomer() methode
 	public Customer(String[] customerData) {
@@ -39,6 +48,9 @@ public class Customer extends Person{
 	}
 
 
+	/**
+	 * Save customer.
+	 */
 	public void saveCustomer(){
 		customer_count++;	
 		String[] customerMap = new String[2];
@@ -64,7 +76,13 @@ public class Customer extends Person{
 
 	
 	//TODO Catch the possible wrong ID
-	static public Customer findCustomer(int customerID){
+	/**
+ * Find customer.
+ *
+ * @param customerID the customer id
+ * @return the customer
+ */
+static public Customer findCustomer(int customerID){
 		String[] customerData = new String[2];
 		
 		if(customerID < customer_count){
