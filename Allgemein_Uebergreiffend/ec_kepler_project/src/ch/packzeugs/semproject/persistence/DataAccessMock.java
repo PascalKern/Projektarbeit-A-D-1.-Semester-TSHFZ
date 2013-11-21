@@ -1,5 +1,5 @@
-/**
- * TODO Class description
+/*
+ * File description
  * 
  * @name	DataAccessMock.java
  * @version	0.1
@@ -7,80 +7,83 @@
  */
 package ch.packzeugs.semproject.persistence;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class DataAccessMock.
+ * The Class DataAccessMock represents a data access mock implementation to store
+ * data from persons (ie. customer, employees) as in-memory in a array.
  *
  * @author PKern
  */
 public class DataAccessMock {
-
+    
+    	//Members
 	/** The client list. */
-	private String[][] clientList = null;
+	private String[][] personList = null;
 	
 	/** The customermax. */
-	private final int CUSTOMERMAX = 15;
+	private final int PESONSMAX = 15;
 	
 	/** The client count. */
-	private int clientCount;
+	private int personsCount;
 	
 	
 	/**
 	 * Special constructor.
 	 */
 	public DataAccessMock(){
-		clientCount = 0;
-		clientList = new String[CUSTOMERMAX][];
+		personsCount = 0;
+		personList = new String[PESONSMAX][];
 	}
 	
 	/**
-	 * Save person.
+	 * Save the persons data in the in-memory data storage.
 	 *
-	 * @param client the client
+	 * @param person the data of the person to insert to the in-memory.
 	 */
-	public void savePerson(String[] client) {
-		if(clientCount < CUSTOMERMAX){
-			clientList[clientCount] = client;
-			clientCount += 1;
+	public void savePerson(String[] person) {
+		if(personsCount < PESONSMAX){
+			personList[personsCount] = person;
+			personsCount++;
 		}else{
-			System.err.println("The Maximum of clients (" + CUSTOMERMAX + ") in the Mock was reached! Nothing saved!");
+			System.err.println("The Maximum of persons to save (" + PESONSMAX + ") is reached! Nothing saved!");
 		}
 	}
 	
 	/**
-	 * Read person.
+	 * Read the data of one person from the in-memory data storage.
 	 *
-	 * @param clientID the client id
-	 * @return the string[]
+	 * @param entryID the id of the entry from which to return the persons data
+	 * @return the data of the read person or in case of an error <i>NULL<i>.
 	 */
-	public String[] readPerson(int clientID){
-		if(clientID < clientCount){
-			return clientList[clientID];
+	public String[] readPerson(int entryID){
+		if(entryID < personsCount){
+		    return personList[entryID];
+		}else{
+		    System.err.println("The given entryID was to high! Not found in the memory.");
+		    return null;		    
 		}
-		return null;
 	}
 	
 	/**
-	 * Read persons.
+	 * Read the data of all persons from the in-memory data storage.
 	 *
-	 * @return the string[][]
+	 * @return the string[][] data of all saved persons.
 	 */
 	public String[][] readPersons(){
-		return clientList;
+		return personList;
 	}
 
 	/**
-	 * Save person.
+	 * Save data of a person to the in-memory
 	 *
-	 * @param name the name
-	 * @param surname the surname
+	 * @param name the name of the person
+	 * @param surname the surname of the person
 	 */
 	public void savePerson(String name, String surname){
-		String[] client = new String[2];
-		client[0] = name;
-		client[1] = surname;
+		String[] person = new String[2];
+		person[0] = name;
+		person[1] = surname;
 		
-		savePerson(client);
+		savePerson(person);
 		
 	}
 

@@ -24,8 +24,8 @@ public class Person {
 	/**
 	 * Instantiates a new person.
 	 *
-	 * @param name the name
-	 * @param surname the surname
+	 * @param name the name of the person
+	 * @param surname the surname of the person
 	 */
 	protected Person(String name, String surname){
 		this.name = name;
@@ -35,7 +35,7 @@ public class Person {
 	
 	
 	/**
-	 * Gets the name.
+	 * Gets the name of the person.
 	 *
 	 * @return the name
 	 */
@@ -44,7 +44,7 @@ public class Person {
 	}
 	
 	/**
-	 * Sets the name.
+	 * Sets the name of the person.
 	 *
 	 * @param name the name to set
 	 */
@@ -53,7 +53,7 @@ public class Person {
 	}
 	
 	/**
-	 * Gets the surname.
+	 * Gets the surname of the person.
 	 *
 	 * @return the surname
 	 */
@@ -62,7 +62,7 @@ public class Person {
 	}
 	
 	/**
-	 * Sets the surname.
+	 * Sets the surname of the person.
 	 *
 	 * @param surname the surname to set
 	 */

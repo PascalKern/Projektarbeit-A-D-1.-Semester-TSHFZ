@@ -1,5 +1,5 @@
-/**
- * TODO Class description
+/*
+ * File description
  * 
  * @name
  * @version
@@ -9,80 +9,67 @@ package ch.packzeugs.semproject.business.person;
 
 import ch.packzeugs.semproject.persistence.DataAccessMock;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Customer.
+ * The class Customer delivers the implementation of a customer as a
+ * <i>"kind"<i> of a person.
  *
  * @author PKern
  */
 public class Customer extends Person{
 
 	//Members
-	/** The data mock. */
+	/** The data mock instance used as the DAO */
 	private static DataAccessMock dataMock = new DataAccessMock();
 	
-	/** The customer_count. */
+	/** The actually customer counter. */
 	private static int customer_count;
 	
-	//Special constructor
+	
+	//Special constructors
 	/**
 	 * Instantiates a new customer.
 	 *
-	 * @param name the name
-	 * @param surname the surname
+	 * @param name the name of the instantiated customer
+	 * @param surname the surname of the instantiated customer
 	 */
 	public Customer(String name, String surname) {
 		super(name, surname);
 	}
 
-
 	/**
 	 * Instantiates a new customer.
 	 *
-	 * @param customerData the customer data
+	 * @param customerData the data for the new customer in the form of <i><<String name, String surname>><i>
 	 */
-	//Only test for the readCustomer() methode
+	//For testing for the readCustomer() method
 	public Customer(String[] customerData) {
-		//this.Customer(customerData[0], customerData[1]); //Error because this tries to act on the object not the class itself!
 		this(customerData[0], customerData[1]);
 	}
 
 
 	/**
-	 * Save customer.
+	 * Save a customer.
 	 */
 	public void saveCustomer(){
 		customer_count++;	
 		String[] customerMap = new String[2];
-											//Use for a static Method to save Customer
+
 		customerMap[0] = this.getName();	//customer.getName();
-		customerMap[1] = this.getSurname();	//customer.getSurname;
+		customerMap[1] = this.getSurname();	//customer.getSurname();
 		
 		dataMock.savePerson(customerMap);
 		
 	}
 	
-
-//	//Overloaded Method for use with a separate customer object - never needed!
-//	public static void saveCustomer(Customer customer){
-//		String[] customerMap = new String[2];
-//											
-//		customerMap[0] = customer.getName();
-//		customerMap[1] = customer.getSurname();
-//		
-//		dataMock.savePerson(customerMap);
-//		
-//	}
-
 	
 	//TODO Catch the possible wrong ID
 	/**
- * Find customer.
- *
- * @param customerID the customer id
- * @return the customer
- */
-static public Customer findCustomer(int customerID){
+         * Find customer (with its entryID) in the memory.
+         *
+         * @param customerID the entry id where the customer was saved in the memory
+         * @return the customer or <i>NULL<i> if the customer couldn't be found.
+         */
+        static public Customer findCustomer(int customerID){
 		String[] customerData = new String[2];
 		
 		if(customerID < customer_count){
@@ -90,9 +77,9 @@ static public Customer findCustomer(int customerID){
 			Customer customer = new Customer(customerData);
 			return customer;
 		}else{
-			System.err.println("The customer ID you gave is to hight!\n");
+			System.err.println("The customer ID you gave is to hight! Nothing found in memory!\n");
+			return null;
 		}
-		return null;
 	}
 	
 }
