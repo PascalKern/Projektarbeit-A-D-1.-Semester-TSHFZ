@@ -1,0 +1,5 @@
+ch.packzeugs.semproject.business.person
+ch.packzeugs.semproject.persistence
+ch.packzeugs.semproject.presentation
+ch.packzeugs.semproject.test.business
+ch.packzeugs.semproject.test.persistence
