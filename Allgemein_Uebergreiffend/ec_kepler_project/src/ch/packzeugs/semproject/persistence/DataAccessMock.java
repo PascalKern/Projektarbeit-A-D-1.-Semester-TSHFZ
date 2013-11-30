@@ -1,17 +1,17 @@
-/*
- * File description
- * 
- * @name	DataAccessMock.java
- * @version	0.1
- * @author	PKern and DMarmy
+/**
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.persistence;
 
 /**
  * The Class DataAccessMock represents a data access mock implementation to store
  * data from persons (ie. customer, employees) as in-memory in a array.
  *
- * @author PKern
+ * @author 	Pascal and David
+ * @version	0.0.1
  */
 public class DataAccessMock {
     

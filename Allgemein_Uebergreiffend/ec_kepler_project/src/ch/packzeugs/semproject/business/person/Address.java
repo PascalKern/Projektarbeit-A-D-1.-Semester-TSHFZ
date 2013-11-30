@@ -1,6 +1,9 @@
-/* File description
- * 
+/**
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.business.person;
 
 /**
@@ -8,6 +11,8 @@ package ch.packzeugs.semproject.business.person;
  * object. 
  * <b>For this iteration not used nor implemented!<b> 
  * 
+ * @version	0.0.1
+ * @author	Pascal and David
  */
 public class Address {
 

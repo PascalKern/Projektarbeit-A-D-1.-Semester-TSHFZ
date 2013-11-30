@@ -1,10 +1,8 @@
-/*
- * File Description
- * 
- * @name
- * @version
- * @author
+/**
+ * @name	${file_name}
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.test.persistence;
 
 import ch.packzeugs.semproject.persistence.DataAccessMock;
@@ -12,12 +10,12 @@ import ch.packzeugs.semproject.persistence.DataAccessMock;
 /**
  * The Class DataAccessMockTest is used for testing the DataAccessMock class.
  *
- * @author PKern
+ * @author	Pascal and David
  */
 public class DataAccessMockTest {
 	
 	/**
-	 * The main method.
+	 * The main method for the test on class DataAccessMock.
 	 *
 	 * @param args the arguments - no arguments used
 	 */

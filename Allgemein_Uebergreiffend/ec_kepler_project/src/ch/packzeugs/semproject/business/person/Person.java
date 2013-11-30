@@ -1,17 +1,17 @@
 /**
- * TODO Class description
- * 
- * @name
- * @version
- * @author
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.business.person;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class Person.
+ * The Class Person acts as a abstract definition for the properties of
+ * a person (aka. customer, employee).
  *
- * @author PKern
+ * @version	0.0.1
+ * @author	Pascal and David
  */
 public class Person {
 

@@ -1,10 +1,9 @@
-/*
- * TODO File description
- * 
- * @name	ConsoleClient.java
- * @version	0.1
- * @author	PKern and DMarmy
+/**
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.presentation;
 
 import ch.packzeugs.semproject.business.person.Customer;
@@ -15,7 +14,8 @@ import ch.packzeugs.semproject.business.person.Customer;
  * The Class ConsoleClient implements the console client of the ConsoleClientApp 
  * example application.
  *
- * @author PKern
+ * @version	0.0.1
+ * @author	Pascal and David
  */
 public class ConsoleClient {
 

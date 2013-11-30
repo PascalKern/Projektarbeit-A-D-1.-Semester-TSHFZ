@@ -1,8 +1,17 @@
+/**
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
+ */
+
 package ch.packzeugs.semproject.presentation;
 
 /**
  * The class ConsoleClientApp demonstrates how to use the class customer
  * and its objects.
+ * 
+ * @version	0.0.1
+ * @author	Pascal and David
  */
 public class ConsoleClientApp {
 

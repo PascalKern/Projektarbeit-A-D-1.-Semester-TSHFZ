@@ -1,29 +1,26 @@
 /**
- * TODO Class description
- * 
- * @name
- * @version
- * @author	PKern and DMarmy
+ * @name	${file_name}
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.test.business;
 
 import ch.packzeugs.semproject.business.person.Customer;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class CustomerTest.
+ * The Class CustomerTest execute some tests on the class Customer
+ * to ensure a correct working (like a unit test).
  *
- * @author pascal
+ * @author	Pascal and David 
  */
 public class CustomerTest {
 
 	/**
-	 * The main method.
+	 * The main method of the test for the class Customer.
 	 *
 	 * @param args the arguments
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		System.out.println("*** Save customer single: --->");
 

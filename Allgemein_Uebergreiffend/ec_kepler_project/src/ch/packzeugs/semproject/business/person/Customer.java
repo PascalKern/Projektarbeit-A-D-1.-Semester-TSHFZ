@@ -1,10 +1,9 @@
-/*
- * File description
- * 
- * @name
- * @version
- * @author
+/**
+ * @name	${file_name}
+ * @version	0.0.1
+ * @author	Pascal and David
  */
+
 package ch.packzeugs.semproject.business.person;
 
 import ch.packzeugs.semproject.persistence.DataAccessMock;
@@ -12,8 +11,9 @@ import ch.packzeugs.semproject.persistence.DataAccessMock;
 /**
  * The class Customer delivers the implementation of a customer as a
  * <i>"kind"<i> of a person.
- *
- * @author PKern
+ *  
+ * @version	0.0.1
+ * @author	Pascal and David
  */
 public class Customer extends Person{
 
