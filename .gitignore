@@ -4,6 +4,7 @@
 #Ordner mit Daten die nicht ins Repositorie kommen sollen
 *.noGit
 /*.noGit
+*noGit*
 
 #Office, mindestens Windows sicher, spezifisch
 ~$*.*
